@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Open Sans';
+  src:  url('../fonts/OpenSans-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:  url('../fonts/OpenSans-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.home {
+  max-width: 1024px;
+  display: flex;
+}
+
+.home-content {
+  padding: 8px 32px 8px 8px;
+}
+
+.home-heading {
+  color: #ED7422;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.home-text {
+  font-size: 1.2rem;
+}
+
+.home-image {
+  width: 500px;
+  border-radius: 20px;
+}
