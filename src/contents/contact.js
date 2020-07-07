@@ -1,20 +1,19 @@
 const contactComponent = (() => {
-  function addClasses(){
+  const mainElement = document.createElement('main');
+  const contactContent = document.createElement('div');
+  const contactHeading = document.createElement('h1');
+  const contactText = document.createElement('div');
+  const contactImage = document.createElement('img');
+
+  (function addClasses() {
     mainElement.classList.add('contact');
     contactContent.classList.add('contact-content');
     contactHeading.classList.add('heading');
     contactText.classList.add('contact-text');
     contactImage.classList.add('content-image');
-  }
+  }());
 
-  function appendElementsChildren(){
-    contactContent.appendChild(contactHeading);
-    contactContent.appendChild(contactText);
-    mainElement.appendChild(contactImage);
-    mainElement.appendChild(contactContent);
-  }
-
-  function addElementsTextContent(){
+  (function addElementsTextContent() {
     const contactHeadingContent = document.createTextNode('Contact Us');
     const contactTextParagraph1 = document.createElement('p');
     const contactTextParagraph2 = document.createElement('p');
@@ -27,17 +26,15 @@ const contactComponent = (() => {
     contactText.appendChild(contactTextParagraph2);
     contactImage.setAttribute('src', imageSrc);
     contactImage.setAttribute('alt', 'Food Image');
-  }
+  }());
 
-  const mainElement = document.createElement('main');
-  const contactContent = document.createElement('div');
-  const contactHeading = document.createElement('h1');
-  const contactText = document.createElement('div');
-  const contactImage = document.createElement('img');
 
-  addClasses();
-  addElementsTextContent();
-  appendElementsChildren();
+  (function appendElementsChildren() {
+    contactContent.appendChild(contactHeading);
+    contactContent.appendChild(contactText);
+    mainElement.appendChild(contactImage);
+    mainElement.appendChild(contactContent);
+  }());
 
   return mainElement;
 })();

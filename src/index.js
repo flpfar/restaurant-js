@@ -21,22 +21,21 @@ const header = (() => {
     homeLink.classList.add('active');
     contentContainer.removeChild(contentContainer.lastChild);
     contentContainer.appendChild(homeComponent);
-    console.dir(homeComponent);
-  })
+  });
 
   contactLink.addEventListener('click', () => {
     document.querySelector('.active').classList.remove('active');
     contactLink.classList.add('active');
     contentContainer.removeChild(contentContainer.lastChild);
     contentContainer.appendChild(contactComponent);
-  })
+  });
 
   menuLink.addEventListener('click', () => {
     document.querySelector('.active').classList.remove('active');
     menuLink.classList.add('active');
     contentContainer.removeChild(contentContainer.lastChild);
     contentContainer.appendChild(menuComponent);
-  })
+  });
 
   headerElement.appendChild(homeLink);
   headerElement.appendChild(menuLink);
