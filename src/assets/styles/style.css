@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Open Sans';
-  src:  url('../fonts/OpenSans-Regular.ttf');
+  src: url('../fonts/OpenSans-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src:  url('../fonts/OpenSans-ExtraBold.ttf');
+  src: url('../fonts/OpenSans-ExtraBold.ttf');
   font-weight: 800;
   font-style: normal;
 }
@@ -37,12 +37,12 @@ body {
 }
 
 .header a:hover {
-  background-color: #ED7422;
+  background-color: #ed7422;
   color: #fff;
 }
 
 .header .active {
-  background-color: #ED7422;
+  background-color: #ed7422;
   color: #fff;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .heading {
-  color: #ED7422;
+  color: #ed7422;
   font-size: 3rem;
   font-weight: 700;
   margin-top: 0;
