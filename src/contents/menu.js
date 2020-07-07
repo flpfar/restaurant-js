@@ -11,12 +11,12 @@ const menuComponent = (() => {
   const menuList = document.createElement('ul');
   const menuImage = document.createElement('img');
 
-  (function addClasses() {
+  function addClasses() {
     mainElement.classList.add('contact');
     menuContent.classList.add('contact-content');
     menuHeading.classList.add('heading');
     menuImage.classList.add('content-image');
-  }());
+  }
 
   function setMenuItems(menuList) {
     for (let i = 0; i < menu.length; i += 1) {
@@ -26,7 +26,7 @@ const menuComponent = (() => {
     }
   }
 
-  (function addElementsTextContent() {
+  function addElementsTextContent() {
     const menuHeadingContent = document.createTextNode('Menu');
     const imageSrc = 'https://images.unsplash.com/photo-1532636330734-1911664950db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80';
 
@@ -34,13 +34,18 @@ const menuComponent = (() => {
     menuHeading.appendChild(menuHeadingContent);
     menuImage.setAttribute('src', imageSrc);
     menuImage.setAttribute('alt', 'Food Image');
-  }())(() => {
+  }
+
+  function appendElementsChildren() {
     menuContent.appendChild(menuHeading);
     menuContent.appendChild(menuList);
     mainElement.appendChild(menuImage);
     mainElement.appendChild(menuContent);
-  })();
+  }
 
+  addClasses();
+  addElementsTextContent();
+  appendElementsChildren();
 
   return mainElement;
 })();
