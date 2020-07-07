@@ -21,7 +21,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.home {
+.home,
+.contact {
   max-width: 1024px;
   display: flex;
 }
@@ -30,7 +31,7 @@ body {
   padding: 8px 32px 8px 8px;
 }
 
-.home-heading {
+.heading {
   color: #ED7422;
   font-size: 3rem;
   font-weight: 700;
@@ -41,7 +42,15 @@ body {
   font-size: 1.2rem;
 }
 
-.home-image {
+.content-image {
   width: 500px;
   border-radius: 20px;
+}
+
+.contact-content {
+  padding: 8px 8px 8px 32px;
+}
+
+.contact-text {
+  
 }

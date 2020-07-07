@@ -2,9 +2,9 @@ const homeComponent = (() => {
   function addClasses(){
     mainElement.classList.add('home');
     homeContent.classList.add('home-content');
-    homeHeading.classList.add('home-heading');
+    homeHeading.classList.add('heading');
     homeText.classList.add('home-text');
-    homeImage.classList.add('home-image');
+    homeImage.classList.add('content-image');
   }
 
   function appendElementsChildren(){
