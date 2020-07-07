@@ -1,4 +1,4 @@
-# Pet Tac Toe
+# Restaurant JS
 
 > A simple Restaurant page created to practice manipulating the DOM with Javascript and Webpack.
 
