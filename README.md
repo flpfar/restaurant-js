@@ -15,7 +15,7 @@ A simple page with three menu items ('Home', 'Menu', 'Contact') where every cont
 
 ## Live Demo
 
-[Pet Tac Toe](https://raw.githack.com/flpfar/tictactoe-js/feature-game/index.html)
+[Restaurant JS](https://raw.githack.com/flpfar/restaurant-js/feature-restaurant/dist/index.html)
 
 ## Setup
 
