@@ -11,22 +11,22 @@ const menuComponent = (() => {
   const menuList = document.createElement('ul');
   const menuImage = document.createElement('img');
 
-  function addClasses() {
+  const addClasses = () => {
     mainElement.classList.add('contact');
     menuContent.classList.add('contact-content');
     menuHeading.classList.add('heading');
     menuImage.classList.add('content-image');
-  }
+  };
 
-  function setMenuItems(menuList) {
+  const setMenuItems = (menuList) => {
     for (let i = 0; i < menu.length; i += 1) {
       const item = document.createElement('li');
       item.appendChild(document.createTextNode(menu[i]));
       menuList.appendChild(item);
     }
-  }
+  };
 
-  function addElementsTextContent() {
+  const addElementsTextContent = () => {
     const menuHeadingContent = document.createTextNode('Menu');
     const imageSrc = 'https://images.unsplash.com/photo-1532636330734-1911664950db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80';
 
@@ -34,14 +34,14 @@ const menuComponent = (() => {
     menuHeading.appendChild(menuHeadingContent);
     menuImage.setAttribute('src', imageSrc);
     menuImage.setAttribute('alt', 'Food Image');
-  }
+  };
 
-  function appendElementsChildren() {
+  const appendElementsChildren = () => {
     menuContent.appendChild(menuHeading);
     menuContent.appendChild(menuList);
     mainElement.appendChild(menuImage);
     mainElement.appendChild(menuContent);
-  }
+  };
 
   addClasses();
   addElementsTextContent();

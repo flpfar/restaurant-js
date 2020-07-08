@@ -5,7 +5,7 @@ const contactComponent = (() => {
   const contactText = document.createElement('div');
   const contactImage = document.createElement('img');
 
-  function addElementsTextContent() {
+  const addElementsTextContent = () => {
     const contactHeadingContent = document.createTextNode('Contact Us');
     const contactTextParagraph1 = document.createElement('p');
     const contactTextParagraph2 = document.createElement('p');
@@ -18,14 +18,14 @@ const contactComponent = (() => {
     contactText.appendChild(contactTextParagraph2);
     contactImage.setAttribute('src', imageSrc);
     contactImage.setAttribute('alt', 'Food Image');
-  }
+  };
 
-  function appendElementsChildren() {
+  const appendElementsChildren = () => {
     contactContent.appendChild(contactHeading);
     contactContent.appendChild(contactText);
     mainElement.appendChild(contactImage);
     mainElement.appendChild(contactContent);
-  }
+  };
 
   mainElement.classList.add('contact');
   contactContent.classList.add('contact-content');
